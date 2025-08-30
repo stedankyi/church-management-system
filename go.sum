@@ -1,2 +1,2 @@
-github.com/stedankyi/church-management-system v0.0.0-20250816182242-5bb96974e5c2 h1:jN3v5vXsFCgL/2/2Pgng9TB8cq4VmMJbIG4agQWoagQ=
-github.com/stedankyi/church-management-system v0.0.0-20250816182242-5bb96974e5c2/go.mod h1:6Hew9LbjmSOzvFz4TIpg+jii8hsQKVy1Ay4Nbig2LWM=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
