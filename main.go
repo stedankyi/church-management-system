@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"net/http"
 	"os"
 
 	"github.com/joho/godotenv"
@@ -28,10 +29,10 @@ func main() {
 	// Connect to database
 	config.ConnectDatabase()
 
-	// Create routers using gin
+	// Create routers
 	routes.SetupRoutes()
 
-	// Start webserver using gin
-	Run(":" + portString)
+	// Start webserver
+	http.ListenAndServe(":"+portString, nil)
 
 }
