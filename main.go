@@ -11,8 +11,14 @@ import (
 	"github.com/stedankyi/church-management-system/routes"
 )
 
+type Login struct {
+	HashPassword string
+	SessionToken string
+	CSRFToken    string
+}
+
 func main() {
-	fmt.Println("Hello Welcome to the Church Management System!")
+	fmt.Println("Hello, Welcome to the Church Management System!")
 
 	err := godotenv.Load()
 	if err != nil {
