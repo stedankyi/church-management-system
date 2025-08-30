@@ -5,7 +5,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"github.com/stedankyi/church-management-system/config"
 	"github.com/stedankyi/church-management-system/routes"
@@ -30,10 +29,9 @@ func main() {
 	config.ConnectDatabase()
 
 	// Create routers using gin
-	router := gin.Default()
-	routes.SetupRoutes(router)
+	routes.SetupRoutes()
 
 	// Start webserver using gin
-	router.Run(":" + portString)
+	Run(":" + portString)
 
 }

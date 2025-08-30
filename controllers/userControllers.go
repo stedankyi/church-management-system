@@ -1,9 +1,7 @@
 package controllers
 
-import "github.com/gin-gonic/gin"
-
-func GetUser(context *gin.Context)    {}
-func GetUsers(context *gin.Context)   {}
-func CreateUser(context *gin.Context) {}
-func UpdateUser(context *gin.Context) {}
-func DeleteUser(context *gin.Context) {}
+func GetUser(context string)    {}
+func GetUsers(context string)   {}
+func CreateUser(context string) {}
+func UpdateUser(context string) {}
+func DeleteUser(context string) {}
