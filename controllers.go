@@ -1,11 +1,11 @@
-package controllers
+package main
 
 import (
 	"fmt"
 	"net/http"
 )
 
-func Login(w http.ResponseWriter, r *http.Request) {
+func login(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		er := http.StatusMethodNotAllowed
 		http.Error(w, "Invalid Request Method", er)
@@ -32,8 +32,8 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Login successful!")
 
 }
-func GetUser(w http.ResponseWriter, r *http.Request)    {}
-func GetUsers(w http.ResponseWriter, r *http.Request)   {}
-func CreateUser(w http.ResponseWriter, r *http.Request) {}
-func UpdateUser(w http.ResponseWriter, r *http.Request) {}
-func DeleteUser(w http.ResponseWriter, r *http.Request) {}
+func getUser(w http.ResponseWriter, r *http.Request)    {}
+func getUsers(w http.ResponseWriter, r *http.Request)   {}
+func createUser(w http.ResponseWriter, r *http.Request) {}
+func updateUser(w http.ResponseWriter, r *http.Request) {}
+func deleteUser(w http.ResponseWriter, r *http.Request) {}

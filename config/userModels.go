@@ -1,4 +1,4 @@
-package models
+package config
 
 type User struct {
 	ID     string

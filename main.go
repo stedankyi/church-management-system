@@ -8,7 +8,6 @@ import (
 
 	"github.com/joho/godotenv"
 	"github.com/stedankyi/church-management-system/config"
-	"github.com/stedankyi/church-management-system/routes"
 )
 
 type Login struct {
@@ -38,7 +37,7 @@ func main() {
 	config.ConnectDatabase()
 
 	// Create routers
-	routes.SetupRoutes()
+	SetupRoutes()
 
 	// Start webserver
 	http.ListenAndServe(":"+portString, nil)
