@@ -4,6 +4,8 @@ import {
 	"crypto/rand"
 	"encoding/base64"
 	"log"
+
+	"golang.org/x/crypto/bcrypt"
 }
 
 func hashPassword(password string) (string, error){
