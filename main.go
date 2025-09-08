@@ -7,7 +7,6 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"golang.org/x/crypto/bcrypt"
 	"github.com/stedankyi/church-management-system/config"
 )
 

@@ -17,17 +17,17 @@ func login(w http.ResponseWriter, r *http.Request) {
 
 	user, ok := users[username] // add in memory database for users
 
-	if !ok || !checkPasswordHash(password, user.PassWord) {
+	if !ok || !checkPasswordHash(password, user.HashPassword) {
 		er := http.StatusUnauthorized
 		http.Error(w, "Invalid username or password", er)
 		return
 	}
 
-	// generate session token
+	// // generate session token
 
-	sessionToken := generateSessionToken(32)
+	// sessionToken := generateSessionToken(32)
 
-	http.SetCookie(w, &http.Cookie)
+	// http.SetCookie(w, &http.Cookie)
 
 	fmt.Fprintln(w, "Login successful!")
 
