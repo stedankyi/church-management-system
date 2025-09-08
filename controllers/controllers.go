@@ -1,8 +1,9 @@
 package controllers
 
-import {
+import (
+	"fmt"
 	"net/http"
-}
+)
 
 func Login(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
@@ -16,7 +17,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 
 	user, ok := users[username] // add in memory database for users
 
-	if !ok || !checkPasswordHash(password, user.PassWord){
+	if !ok || !checkPasswordHash(password, user.PassWord) {
 		er := http.StatusUnauthorized
 		http.Error(w, "Invalid username or password", er)
 		return

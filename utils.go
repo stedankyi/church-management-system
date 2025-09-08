@@ -5,7 +5,7 @@ import {
 	"encoding/base64"
 	"log"
 
-	"bcrypt"
+	"golang.org/x/crypto/bcrypt"
 }
 
 func hashPassword(password string) (string, error){
