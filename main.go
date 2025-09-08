@@ -17,6 +17,8 @@ type Login struct {
 	CSRFToken    string
 }
 
+var users = map[string]Login{}
+
 func main() {
 	fmt.Println("Hello, Welcome to the Church Management System!")
 
